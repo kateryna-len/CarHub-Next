@@ -33,8 +33,8 @@ export interface CarProps {
 
 export interface CarDetailsProps {
   isOpen: boolean;
-  closeModal: ()=>void;
-  car: CarProps
+  closeModal: () => void;
+  car: CarProps;
 }
 
 export interface FiltersProps {
@@ -45,12 +45,17 @@ export interface FiltersProps {
   model: string;
 }
 
-export interface OptionProps{
-  title:string;
+export interface OptionProps {
+  title: string;
   value: string;
 }
 
 export interface CustomFilterProps {
   title: string;
-  options: OptionProps[]
+  options: OptionProps[];
+}
+
+export interface ShowMoreProps {
+  pageNumber: number;
+  isNext: boolean;
 }
